@@ -145,6 +145,7 @@ body{
     margin-top: 10px;
     height: 300px;
     width: 500px;
+    max-width: 80vw;
     display: grid;
     grid-template-rows: 1fr 1fr 4fr;
     grid-template-columns: 1fr 4fr 1fr;
@@ -195,3 +196,26 @@ body{
 .player{
     margin-top: 0;
 }
+
+@media only screen and (max-width: 550px) {
+    body {
+      background-color: lightblue;
+    }
+    .game-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .vsContainer{
+        margin: 20px 0;
+        height: 40px;
+        width: 40px;
+    }
+    .choose{
+        height: 150px;
+        width: 150px;
+
+    }
+  }
