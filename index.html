@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra papel o tijeras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Piedra, papel o tijeras</h1>
+    <section class="header">
+        <button id="playButton" class="play-now-button">Jugar Ahora</button>
+    </section>
+    <main class="game" id="gameContainer">
+        <section class="game-container">
+            <div class="choose" id="yourChoose"></div>
+            <div class="vsContainer">
+                <h3 id="vsTag" class="vs">VS</h3>
+            </div>
+            <div class="choose" id="machineChoose"></div>
+        </section>
+        <section class="option-picker">
+            <h2 class="picker-header">
+                Escoge una opción por favor:
+            </h2>
+            <div class="options">
+                <div id="optionPiedra" class="option">
+                    <img src="assets/opcion-1.png" alt="elegir papel">
+                    <p>Piedra</p>
+                </div>
+                <div id="optionPapel" class="option">
+                    <img src="assets/opcion-2.png" alt="elegir piedra">
+                    <p>Papel</p>
+                </div>
+                <div id="optionTijeras" class="option">
+                    <img src="assets/opcion-3.png" alt="elegir tijeras">
+                    <p>Tijeras</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="resultsOverlay" class="overlay">
+        <div class="results">
+            <button id="closeModal">X</button>
+            <h1 id="modalTitle" class="modal-title">Has ganado</h1>
+            <div class="score">
+                <div class="yourPoints">
+                    <h2 class="player">Tú</h2>
+                    <h2 id="playerPoints">0</h2>
+                </div>
+                <div class="machinePoints">
+                    <h2 class="player">PC</h2>
+                    <h2 id="pcPoints">0</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
